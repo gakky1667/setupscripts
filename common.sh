@@ -14,3 +14,6 @@ if [ -e ~/.tmux.conf ]; then
     rm -rf ~/.tmux.conf
 fi
 cp -r ./dotfiles/tmux.conf ~/.tmux.conf
+
+env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
+source ~/.bashrc
