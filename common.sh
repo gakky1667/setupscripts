@@ -15,6 +15,6 @@ if [ -e ~/.tmux.conf ]; then
 fi
 cp -r ./dotfiles/tmux.conf ~/.tmux.conf
 
-PS1="\[\033[33m\]\u\[\033[0m\]:(\[\033[34m\]\W\[\033[0m\]) >> "
+echo PS1="\"\[\033[33m\]\u\[\033[0m\]:(\[\033[34m\]\W\[\033[0m\]) >> \"" >> ~/.bashrc
 env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 source ~/.bashrc
